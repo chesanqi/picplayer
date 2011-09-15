@@ -12,7 +12,6 @@ img {
   height:75px;
 }
 </style>
-
 <script>
 var req = new XMLHttpRequest();
 req.open(
@@ -38,7 +37,6 @@ function showPhotos() {
     document.body.appendChild(img);
   }
 }
-
 // See: http://www.flickr.com/services/api/misc.urls.html
 function constructImageURL(photo) {
   return "http://farm" + photo.getAttribute("farm") +
