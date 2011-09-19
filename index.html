@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery UI jQuery插件 轮播图" />
+<meta name="description" content="基于jQuery的轮播图插件" />
+<title>jQuery轮播图</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script>
+	<!-- $.noConflict(); -->
+</script>
+<script type="text/javascript" src="js/jquery.chesanqi.picplayer.js"></script>
+
+
+</head>
+<body>
+<dl id="focus_dl">
+	<dt>
+		<i class="btn_left"></i>
+		<b>
+			<!-- 小图 src='小图地址'-->
+			<img src="http://chesanqi.com/lab/picplayer/images/10051316072312876.jpg" />
+			<img src="http://chesanqi.com/lab/picplayer/images/10051316072312386.jpg" />
+			<img src="http://chesanqi.com/lab/picplayer/images/10051316073472172.jpg" />
+			<img src="http://chesanqi.com/lab/picplayer/images/10051316145379601.jpg" />
+			<img src="http://chesanqi.com/lab/picplayer/images/10051316072311289.jpg" />
+			<img src="http://chesanqi.com/lab/picplayer/images/10051316072313371.jpg" />
+			<!-- end -->
+		</b>	
+		<i class="btn_right"></i>
+	</dt>
+	<!-- 大图 href='链接地址' src='大图地址'-->
+	<dd><a href="#" target="_blank"><img src="http://chesanqi.com/lab/picplayer/images/10051315898145420.jpg" /></a></dd>
+	<dd><a href="#" target="_blank"><img src="http://chesanqi.com/lab/picplayer/images/10051311305584059.jpg" /></a></dd>
+	<dd><a href="#" target="_blank"><img src="http://chesanqi.com/lab/picplayer/images/10051312440558042.jpg" /></a></dd>
+	<dd><a href="#" target="_blank"><img src="http://chesanqi.com/lab/picplayer/images/10051316145379884.jpg" /></a></dd>
+	<dd><a href="#" target="_blank"><img src="http://chesanqi.com/lab/picplayer/images/10051315881011073.jpg" /></a></dd>
+	<dd><a href="#" target="_blank"><img src="http://chesanqi.com/lab/picplayer/images/10051315217671655.jpg" /></a></dd>
+	<!-- end -->	
+</dl>
+</body>
+</html>
+<script type="text/javascript">
+	
+		
+	$(function(){
+		$('body').lunboFocus({
+			lb_dd:'#focus_dl dd',              //大图
+			lb_btn:'#focus_dl dt i',           //箭头
+			lb_img_btn_dom:'#focus_dl dt img', //小图
+			lb_img_btn_num:3,					//小图显示数量
+			btn_int:4,							//小图间距
+			speed:5								//速度
+		});
+	})
+</script>
+<div style="display:none"><script src="http://s175.cnzz.com/stat.php?id=1838958&web_id=1838958" language="JavaScript"></script></div> 

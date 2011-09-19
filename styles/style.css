@@ -1,0 +1,16 @@
+/*ÂÖ²¥*/
+*{ margin:0; padding:0;}
+#focus_dl{ width:401px; height:247px; overflow:hidden; position:relative;}
+#focus_dl dt{ width:401px; height:60px; position:absolute; z-index:5; left:0; bottom:0;}
+#focus_dl dt i{ width:35px; height:42px; position:absolute; z-index:7; top:9px; cursor:pointer; background:url(../images/jt.png) no-repeat;}
+#focus_dl dt i.curr{  filter:alpha(opacity=50);-moz-opacity:.5;-khtml-opacity: .5;opacity: .5;}
+	#focus_dl dt .btn_left{ left:5px; background-position:0 0;}
+	#focus_dl dt .btn_right{ right:5px; background-position:-2px -42px;}
+#focus_dl dt b{ width:300px; height:42px; overflow:hidden; position:absolute; z-index:6; left:50px; bottom:9px;}
+	#focus_dl dt img{ width:56px; height:42px;position:absolute; z-index:8; top:0; cursor:pointer; }
+#focus_dl dd{ width:401px; height:247px; display:none; position:absolute;} 
+	#focus_dl dd img{ width:401px; height:247px;} 
+/*110915updata*/
+#focus_dl dt b{ height:48px; left:30px; bottom:6px;}
+#focus_dl dt img{ width:108px; height:48px;}
+/*end*/
